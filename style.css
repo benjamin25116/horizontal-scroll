@@ -1,0 +1,52 @@
+* {
+ padding: 0px;
+ margin: 0px;
+}
+
+nav {
+ height: 100vh;
+ width: 25vw;
+ position: fixed;
+ background-color: black;
+ opacity: 0;
+ transition: all ease-in-out 0.5s;
+}
+
+nav:hover {
+ transition: all ease-in-out 0.5s;
+ opacity: 1;
+}
+
+#horizontal-wrapper {
+ display: flex;
+ height: 100vh;
+ width: calc(5 * 100vw);
+ overflow-x: auto;
+ overflow-y: hidden;
+}
+
+.pages {
+ width: 100%;
+ height: 100%;
+ overflow-x: auto;
+ overflow-y: hidden;
+}
+
+#about-me {
+ background-color: aqua;
+}
+#teaching {
+ background-color: bisque;
+}
+#photography {
+ 
+ background-color: goldenrod;
+}
+
+#videography {
+ background-color: rebeccapurple;
+
+}
+#graphic-design {
+ background-color: brown;
+}
