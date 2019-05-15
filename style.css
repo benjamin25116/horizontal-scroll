@@ -1,13 +1,15 @@
 * {
  padding: 0px;
  margin: 0px;
+ box-sizing: border-box;
+ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 nav {
  height: 100vh;
  width: 25vw;
  position: fixed;
- background-color: black;
+ background-color: lightgray;
  opacity: 0;
  transition: all ease-in-out 0.5s;
 }
@@ -32,14 +34,60 @@ nav:hover {
  overflow-y: hidden;
 }
 
+
 #about-me {
- background-color: aqua;
+ height: 100vh;
+ background: url(./images/landing.jpg) center/cover fixed;
 }
+
+#about-me article {
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ background: white;
+ width: 50%;
+ height: 100%;
+}
+
+#about-me h2 {
+ width: 50%;
+ height: fit-content;
+ align-self: flex-end;
+ padding: 10px 50px;
+}
+
+#about-me h1 {
+ font-size: 3.5em;
+ width: 50vw;
+ text-align: right;
+ padding-right: 50px;
+}
+
+#about-me p {
+ width: 50%;
+ height: fit-content;
+ align-self: flex-end;
+ text-align: justify;
+ padding: 10px 50px;
+}
+
 #teaching {
- background-color: bisque;
+ background: url("./images/teachers.jpg") center/cover fixed;
+ display: flex;
+ align-items: flex-end;
 }
+
+#teaching article {
+ display: flex;
+ flex-direction: column;
+ height: 30vh;
+ background-color: antiquewhite;
+ width: 100vw;
+ padding: 5vh 20vw;
+}
+
 #photography {
- 
+
  background-color: goldenrod;
 }
 
@@ -47,6 +95,7 @@ nav:hover {
  background-color: rebeccapurple;
 
 }
+
 #graphic-design {
  background-color: brown;
 }
